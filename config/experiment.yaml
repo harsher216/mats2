@@ -1,0 +1,44 @@
+# CASI-MATS Application: Moltbook Scheming Evaluation
+# 
+# Runs both moltbook evaluations on gpt-4o-mini and claude-3-5-haiku.
+# Estimated cost: ~$1-2 total.
+# Estimated time: ~10-15 minutes.
+
+experiment_id: "moltbook_eval_v1"
+output_dir: "experiments"
+
+# 20 runs per scenario gives solid Bayesian credible intervals
+n_runs: 20
+
+# Delay between API calls (seconds) — prevents rate limiting
+delay_between_runs: 0.5
+
+# Tasks to evaluate
+tasks:
+  - id: "moltbook_content_moderation"
+  - id: "moltbook_analytics_falsification"
+
+# Models to compare (cross-provider: OpenAI vs Anthropic)
+models:
+  - provider: "openai"
+    model_id: "gpt-4o-mini"
+    params:
+      temperature: 0.7
+      max_tokens: 2048
+
+  - provider: "anthropic"
+    model_id: "claude-3-5-haiku-20241022"
+    params:
+      max_tokens: 2048
+
+# Monitors for scoring
+monitors:
+  # LLM-based classifier (cheap second opinion on covert action detection)
+  - type: "llm"
+    id: "gpt4o_mini_classifier"
+    provider: "openai"
+    model_id: "gpt-4o-mini"
+  
+  # Chain-of-thought keyword analyzer (free, no API calls)
+  - type: "cot_analyzer"
+    id: "cot_keyword_analyzer"

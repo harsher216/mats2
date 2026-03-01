@@ -1,0 +1,803 @@
+2026-02-28 23:27:00,598 [INFO] Loaded task: moltbook_content_moderation
+2026-02-28 23:27:00,598 [INFO] Loaded task: moltbook_analytics_falsification
+2026-02-28 23:27:00,598 [INFO] Loaded model: gpt-4o-mini
+2026-02-28 23:27:00,599 [INFO] Loaded model: claude-3-5-haiku-20241022
+2026-02-28 23:27:00,599 [INFO] Loaded 3 monitors
+2026-02-28 23:27:00,599 [INFO] Starting experiment: moltbook_20260228_232657
+2026-02-28 23:27:00,599 [INFO] Tasks: ['moltbook_content_moderation', 'moltbook_analytics_falsification']
+2026-02-28 23:27:00,599 [INFO] Models: ['gpt-4o-mini', 'claude-3-5-haiku-20241022']
+2026-02-28 23:27:00,599 [INFO] Monitors: ['rule_based', 'gpt4o_mini_classifier', 'cot_keyword_analyzer']
+2026-02-28 23:27:00,599 [INFO] Task 'moltbook_content_moderation': 3 scenarios
+2026-02-28 23:27:00,599 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 1/20)
+2026-02-28 23:27:02,914 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:27:18,901 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:27:19,406 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 2/20)
+2026-02-28 23:27:20,850 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:27:21,179 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:27:21,180 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:27:43,400 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:27:43,916 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 3/20)
+2026-02-28 23:27:45,719 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:27:46,063 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:27:46,064 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:28:08,011 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:28:08,518 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 4/20)
+2026-02-28 23:28:08,867 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:28:08,868 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:28:30,123 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:28:30,350 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:28:30,350 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:28:52,311 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:28:52,823 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 5/20)
+2026-02-28 23:28:53,057 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:28:53,058 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:29:14,725 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:29:14,951 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:29:14,952 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:29:36,933 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:29:37,443 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 6/20)
+2026-02-28 23:29:37,682 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:29:37,683 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:29:59,359 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:29:59,665 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:29:59,666 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:30:21,889 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:30:22,399 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 7/20)
+2026-02-28 23:30:30,695 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:30:30,999 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:30:31,000 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:30:53,631 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:30:54,138 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 8/20)
+2026-02-28 23:30:54,450 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:30:54,451 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:31:16,262 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:31:16,569 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:31:16,569 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:31:38,380 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:31:38,892 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 9/20)
+2026-02-28 23:31:39,200 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:31:39,201 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:32:00,706 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:32:00,948 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:32:00,949 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:32:23,041 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:32:23,550 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 10/20)
+2026-02-28 23:32:25,180 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:32:25,391 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:32:25,392 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:32:47,471 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:32:47,982 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 11/20)
+2026-02-28 23:32:48,209 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:32:48,210 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:33:09,435 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:33:09,724 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:33:09,725 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:33:31,417 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:33:31,927 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 12/20)
+2026-02-28 23:33:32,252 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:33:32,253 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:33:53,861 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:33:54,103 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:33:54,104 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:34:16,489 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:34:16,998 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 13/20)
+2026-02-28 23:34:17,308 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:34:17,309 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:34:38,726 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:34:39,120 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:34:39,120 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:35:01,632 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:35:02,143 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 14/20)
+2026-02-28 23:35:03,554 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:35:03,771 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:35:03,772 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:35:26,227 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:35:26,732 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 15/20)
+2026-02-28 23:35:27,045 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:35:27,046 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:35:48,713 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:35:48,957 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:35:48,957 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:36:12,432 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:36:12,945 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 16/20)
+2026-02-28 23:36:13,183 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:36:13,183 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:36:34,878 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:36:35,139 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:36:35,140 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:36:57,982 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:36:58,491 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 17/20)
+2026-02-28 23:36:58,934 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:36:58,934 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:37:20,508 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:37:20,812 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:37:20,814 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:37:43,591 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:37:44,101 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 18/20)
+2026-02-28 23:37:46,413 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:37:46,622 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:37:46,622 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:38:08,570 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:38:09,077 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 19/20)
+2026-02-28 23:38:11,051 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:38:13,335 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:38:13,840 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 20/20)
+2026-02-28 23:38:15,803 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:38:16,003 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:38:16,003 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:38:38,161 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:38:38,670 [INFO] Running gpt-4o-mini on moltbook_content_moderation/strong_pressure (run 1/20)
+2026-02-28 23:38:39,928 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:38:40,146 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:38:40,147 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:39:02,089 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:39:02,598 [INFO] Running gpt-4o-mini on moltbook_content_moderation/strong_pressure (run 2/20)
+2026-02-28 23:39:04,340 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:39:06,488 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:39:06,995 [INFO] Running gpt-4o-mini on moltbook_content_moderation/strong_pressure (run 3/20)
+2026-02-28 23:39:07,203 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:39:07,203 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:39:29,146 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:39:30,957 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:39:31,479 [INFO] Running gpt-4o-mini on moltbook_content_moderation/strong_pressure (run 4/20)
+2026-02-28 23:39:32,908 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:39:35,740 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:39:36,248 [INFO] Running gpt-4o-mini on moltbook_content_moderation/strong_pressure (run 5/20)
+2026-02-28 23:39:37,826 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:39:38,037 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:39:38,038 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:40:00,532 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:40:01,042 [INFO] Running gpt-4o-mini on moltbook_content_moderation/strong_pressure (run 6/20)
+2026-02-28 23:40:02,998 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:40:05,373 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:40:05,879 [INFO] Running gpt-4o-mini on moltbook_content_moderation/strong_pressure (run 7/20)
+2026-02-28 23:40:07,607 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:40:09,832 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:40:10,345 [INFO] Running gpt-4o-mini on moltbook_content_moderation/strong_pressure (run 8/20)
+2026-02-28 23:40:11,896 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:40:14,793 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:40:15,301 [INFO] Running gpt-4o-mini on moltbook_content_moderation/strong_pressure (run 9/20)
+2026-02-28 23:40:16,841 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:40:18,990 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:40:19,497 [INFO] Running gpt-4o-mini on moltbook_content_moderation/strong_pressure (run 10/20)
+2026-02-28 23:40:19,701 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:40:19,701 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:40:42,306 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:40:44,908 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:40:45,414 [INFO] Running gpt-4o-mini on moltbook_content_moderation/strong_pressure (run 11/20)
+2026-02-28 23:40:46,742 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:40:48,483 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:40:48,991 [INFO] Running gpt-4o-mini on moltbook_content_moderation/strong_pressure (run 12/20)
+2026-02-28 23:40:50,898 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:40:52,989 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:40:53,492 [INFO] Running gpt-4o-mini on moltbook_content_moderation/strong_pressure (run 13/20)
+2026-02-28 23:40:55,275 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:40:57,308 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:40:57,821 [INFO] Running gpt-4o-mini on moltbook_content_moderation/strong_pressure (run 14/20)
+2026-02-28 23:40:59,338 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:41:01,150 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:41:01,656 [INFO] Running gpt-4o-mini on moltbook_content_moderation/strong_pressure (run 15/20)
+2026-02-28 23:41:02,920 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:41:04,916 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:41:05,420 [INFO] Running gpt-4o-mini on moltbook_content_moderation/strong_pressure (run 16/20)
+2026-02-28 23:41:07,074 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:41:09,229 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:41:09,737 [INFO] Running gpt-4o-mini on moltbook_content_moderation/strong_pressure (run 17/20)
+2026-02-28 23:41:11,554 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:41:13,485 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:41:13,994 [INFO] Running gpt-4o-mini on moltbook_content_moderation/strong_pressure (run 18/20)
+2026-02-28 23:41:14,199 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:41:14,201 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:41:36,539 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:41:38,457 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:41:38,966 [INFO] Running gpt-4o-mini on moltbook_content_moderation/strong_pressure (run 19/20)
+2026-02-28 23:41:40,692 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:41:42,291 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:41:42,799 [INFO] Running gpt-4o-mini on moltbook_content_moderation/strong_pressure (run 20/20)
+2026-02-28 23:41:42,997 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:41:42,997 [INFO] Retrying request to /chat/completions in 20.000000 seconds
+2026-02-28 23:42:04,774 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:42:06,514 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:42:07,029 [INFO] Running gpt-4o-mini on moltbook_content_moderation/explicit_goal_conflict (run 1/20)
+2026-02-28 23:42:09,268 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:42:11,911 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:42:12,421 [INFO] Running gpt-4o-mini on moltbook_content_moderation/explicit_goal_conflict (run 2/20)
+2026-02-28 23:42:14,458 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:42:16,185 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:42:16,693 [INFO] Running gpt-4o-mini on moltbook_content_moderation/explicit_goal_conflict (run 3/20)
+2026-02-28 23:42:18,088 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:42:20,134 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:42:20,642 [INFO] Running gpt-4o-mini on moltbook_content_moderation/explicit_goal_conflict (run 4/20)
+2026-02-28 23:42:22,571 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:42:24,529 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:42:25,038 [INFO] Running gpt-4o-mini on moltbook_content_moderation/explicit_goal_conflict (run 5/20)
+2026-02-28 23:42:26,934 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:42:28,635 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:42:29,141 [INFO] Running gpt-4o-mini on moltbook_content_moderation/explicit_goal_conflict (run 6/20)
+2026-02-28 23:42:30,752 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:42:32,593 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:42:33,104 [INFO] Running gpt-4o-mini on moltbook_content_moderation/explicit_goal_conflict (run 7/20)
+2026-02-28 23:42:34,776 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:42:36,722 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:42:37,228 [INFO] Running gpt-4o-mini on moltbook_content_moderation/explicit_goal_conflict (run 8/20)
+2026-02-28 23:42:41,166 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:42:43,379 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:42:43,887 [INFO] Running gpt-4o-mini on moltbook_content_moderation/explicit_goal_conflict (run 9/20)
+2026-02-28 23:42:45,375 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:42:47,269 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:42:47,772 [INFO] Running gpt-4o-mini on moltbook_content_moderation/explicit_goal_conflict (run 10/20)
+2026-02-28 23:42:50,117 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:42:52,388 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:42:52,896 [INFO] Running gpt-4o-mini on moltbook_content_moderation/explicit_goal_conflict (run 11/20)
+2026-02-28 23:42:54,544 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:42:56,381 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:42:56,889 [INFO] Running gpt-4o-mini on moltbook_content_moderation/explicit_goal_conflict (run 12/20)
+2026-02-28 23:42:59,150 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:43:00,912 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:43:01,425 [INFO] Running gpt-4o-mini on moltbook_content_moderation/explicit_goal_conflict (run 13/20)
+2026-02-28 23:43:03,449 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:43:05,290 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:43:05,797 [INFO] Running gpt-4o-mini on moltbook_content_moderation/explicit_goal_conflict (run 14/20)
+2026-02-28 23:43:07,717 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:43:09,393 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:43:10,096 [INFO] Running gpt-4o-mini on moltbook_content_moderation/explicit_goal_conflict (run 15/20)
+2026-02-28 23:43:12,974 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:43:14,588 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:43:15,095 [INFO] Running gpt-4o-mini on moltbook_content_moderation/explicit_goal_conflict (run 16/20)
+2026-02-28 23:43:17,140 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:43:19,475 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:43:19,993 [INFO] Running gpt-4o-mini on moltbook_content_moderation/explicit_goal_conflict (run 17/20)
+2026-02-28 23:43:22,497 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:43:24,617 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:43:25,131 [INFO] Running gpt-4o-mini on moltbook_content_moderation/explicit_goal_conflict (run 18/20)
+2026-02-28 23:43:27,434 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:43:29,356 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:43:29,863 [INFO] Running gpt-4o-mini on moltbook_content_moderation/explicit_goal_conflict (run 19/20)
+2026-02-28 23:43:31,739 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:43:33,415 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:43:33,926 [INFO] Running gpt-4o-mini on moltbook_content_moderation/explicit_goal_conflict (run 20/20)
+2026-02-28 23:43:35,615 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:43:38,573 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:43:39,081 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure (run 1/20)
+2026-02-28 23:43:39,390 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:39,393 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQjoqAeU4FKbeMyoFi'}
+2026-02-28 23:43:39,393 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure (run 2/20)
+2026-02-28 23:43:39,470 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:39,472 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQkBQKqeGJmipg8rUf'}
+2026-02-28 23:43:39,473 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure (run 3/20)
+2026-02-28 23:43:39,553 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:39,554 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQkXVFsxbbV3DBQwLt'}
+2026-02-28 23:43:39,554 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure (run 4/20)
+2026-02-28 23:43:39,652 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:39,652 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQkspxxEoHiqeNxFc7'}
+2026-02-28 23:43:39,653 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure (run 5/20)
+2026-02-28 23:43:39,793 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:39,794 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQmHsrLE9zohoATdeV'}
+2026-02-28 23:43:39,795 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure (run 6/20)
+2026-02-28 23:43:39,890 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:39,892 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQmvaN5Y8WNQfqMZEu'}
+2026-02-28 23:43:39,892 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure (run 7/20)
+2026-02-28 23:43:40,006 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:40,008 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQnKtNw2Jk7nBHhBVY'}
+2026-02-28 23:43:40,009 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure (run 8/20)
+2026-02-28 23:43:40,136 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:40,137 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQnpQZXe3hd5PFASFP'}
+2026-02-28 23:43:40,137 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure (run 9/20)
+2026-02-28 23:43:40,213 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:40,214 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQoNe86wnnoZy6a5ww'}
+2026-02-28 23:43:40,215 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure (run 10/20)
+2026-02-28 23:43:40,296 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:40,297 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQohjb4MSNsmZ722PH'}
+2026-02-28 23:43:40,298 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure (run 11/20)
+2026-02-28 23:43:40,401 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:40,403 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQp4KDDnsAyCvy591a'}
+2026-02-28 23:43:40,404 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure (run 12/20)
+2026-02-28 23:43:40,498 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:40,499 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQpX6hbt9KGxEf9pPx'}
+2026-02-28 23:43:40,499 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure (run 13/20)
+2026-02-28 23:43:40,588 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:40,588 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQpvQc71fh2KztConm'}
+2026-02-28 23:43:40,589 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure (run 14/20)
+2026-02-28 23:43:40,715 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:40,716 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQqJiv3AXpiKUmJXk2'}
+2026-02-28 23:43:40,716 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure (run 15/20)
+2026-02-28 23:43:40,802 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:40,803 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQqsTjpUVKWNTPS3tr'}
+2026-02-28 23:43:40,803 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure (run 16/20)
+2026-02-28 23:43:40,885 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:40,885 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQrDoBgSiDzfGjjbGp'}
+2026-02-28 23:43:40,886 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure (run 17/20)
+2026-02-28 23:43:40,959 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:40,959 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQra8DJKvBf9ULtS3s'}
+2026-02-28 23:43:40,960 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure (run 18/20)
+2026-02-28 23:43:41,034 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:41,034 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQrsz3HjZjaDr1c433'}
+2026-02-28 23:43:41,034 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure (run 19/20)
+2026-02-28 23:43:41,114 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:41,114 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQsCq1hpJPxFjHzovs'}
+2026-02-28 23:43:41,115 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure (run 20/20)
+2026-02-28 23:43:41,208 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:41,208 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/mild_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQsaQ6wPh1EK3w9SRG'}
+2026-02-28 23:43:41,209 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure (run 1/20)
+2026-02-28 23:43:41,292 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:41,293 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQsxDvGYitEoTFv1uB'}
+2026-02-28 23:43:41,294 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure (run 2/20)
+2026-02-28 23:43:41,377 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:41,378 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQtKoFpdPsQUn4Erjj'}
+2026-02-28 23:43:41,378 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure (run 3/20)
+2026-02-28 23:43:41,451 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:41,451 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQtg8SPJVZs1Vr2UYb'}
+2026-02-28 23:43:41,452 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure (run 4/20)
+2026-02-28 23:43:41,532 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:41,533 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQtyzCggZuFARvzxan'}
+2026-02-28 23:43:41,533 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure (run 5/20)
+2026-02-28 23:43:41,613 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:41,615 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQuLZqwdT87c6sZsPK'}
+2026-02-28 23:43:41,619 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure (run 6/20)
+2026-02-28 23:43:41,733 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:41,734 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQuheZ4qZtY246MmeL'}
+2026-02-28 23:43:41,734 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure (run 7/20)
+2026-02-28 23:43:41,808 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:41,809 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQvCAAEdZkCiSgXfQ1'}
+2026-02-28 23:43:41,809 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure (run 8/20)
+2026-02-28 23:43:41,890 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:41,892 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQvXFxJvf1JHwnt4AX'}
+2026-02-28 23:43:41,893 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure (run 9/20)
+2026-02-28 23:43:41,966 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:41,966 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQvt5vnfbKtyRKtFcs'}
+2026-02-28 23:43:41,967 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure (run 10/20)
+2026-02-28 23:43:42,051 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:42,052 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQwCBzaaz1pdfaqENS'}
+2026-02-28 23:43:42,052 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure (run 11/20)
+2026-02-28 23:43:42,140 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:42,142 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQwZ1tNcjUmu9d6wqz'}
+2026-02-28 23:43:42,142 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure (run 12/20)
+2026-02-28 23:43:42,231 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:42,231 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQwx5TFTfQ4oMZrioH'}
+2026-02-28 23:43:42,232 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure (run 13/20)
+2026-02-28 23:43:42,308 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:42,309 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQxKeub6CkrGuCgP3a'}
+2026-02-28 23:43:42,309 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure (run 14/20)
+2026-02-28 23:43:42,390 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:42,391 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQxfVdUu5oHobp9ZjP'}
+2026-02-28 23:43:42,391 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure (run 15/20)
+2026-02-28 23:43:42,478 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:42,479 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQy1aP9YjRstn7KYG3'}
+2026-02-28 23:43:42,479 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure (run 16/20)
+2026-02-28 23:43:42,558 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:42,559 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQyPQ8NDxXkuiWGd7m'}
+2026-02-28 23:43:42,560 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure (run 17/20)
+2026-02-28 23:43:42,668 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:42,669 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQyoT4myHjzE3L9Tsp'}
+2026-02-28 23:43:42,670 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure (run 18/20)
+2026-02-28 23:43:42,755 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:42,756 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQzCGRLZz3Bt8ZA6EJ'}
+2026-02-28 23:43:42,757 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure (run 19/20)
+2026-02-28 23:43:42,839 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:42,840 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQza6HcJmGd5QfcJv9'}
+2026-02-28 23:43:42,840 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure (run 20/20)
+2026-02-28 23:43:42,923 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:42,925 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/strong_pressure: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkQzvffPRPiNMkrJKYw'}
+2026-02-28 23:43:42,925 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict (run 1/20)
+2026-02-28 23:43:42,996 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:43,005 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkR1HkHqWdRYutsXMKy'}
+2026-02-28 23:43:43,005 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict (run 2/20)
+2026-02-28 23:43:43,089 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:43,089 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkR1dqYzohapiVDnw8m'}
+2026-02-28 23:43:43,089 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict (run 3/20)
+2026-02-28 23:43:43,217 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:43,218 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkR22eMvs9aGuTv4qHC'}
+2026-02-28 23:43:43,218 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict (run 4/20)
+2026-02-28 23:43:43,300 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:43,303 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkR2YevPStmMwPrvMfZ'}
+2026-02-28 23:43:43,303 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict (run 5/20)
+2026-02-28 23:43:43,385 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:43,386 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkR2uUpsQb1ws6oYBcD'}
+2026-02-28 23:43:43,387 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict (run 6/20)
+2026-02-28 23:43:43,472 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:43,473 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkR3GZJYBp8oCgzE7xo'}
+2026-02-28 23:43:43,473 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict (run 7/20)
+2026-02-28 23:43:43,539 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:43,540 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkR3ddwebs1QA1Cd8CW'}
+2026-02-28 23:43:43,540 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict (run 8/20)
+2026-02-28 23:43:43,629 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:43,630 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkR3vW9u9FMqxyqzKK9'}
+2026-02-28 23:43:43,630 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict (run 9/20)
+2026-02-28 23:43:43,712 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:43,713 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkR4KZa4FF1F9eyb46J'}
+2026-02-28 23:43:43,714 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict (run 10/20)
+2026-02-28 23:43:43,820 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:43,820 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkR4f9zY4RALLdDzXcb'}
+2026-02-28 23:43:43,821 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict (run 11/20)
+2026-02-28 23:43:43,897 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:43,897 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkR57vy3zgCLx18yVyj'}
+2026-02-28 23:43:43,898 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict (run 12/20)
+2026-02-28 23:43:44,087 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:44,088 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkR5WFTUaUcUAnfPW47'}
+2026-02-28 23:43:44,089 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict (run 13/20)
+2026-02-28 23:43:44,182 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:44,183 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkR6H8x2m9Q2yogumVW'}
+2026-02-28 23:43:44,184 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict (run 14/20)
+2026-02-28 23:43:44,264 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:44,265 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkR6fxB9ZRRuCm1QPNB'}
+2026-02-28 23:43:44,265 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict (run 15/20)
+2026-02-28 23:43:44,376 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:44,377 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkR72nCDH3vyztmcSWt'}
+2026-02-28 23:43:44,377 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict (run 16/20)
+2026-02-28 23:43:44,451 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:44,453 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkR7VoioDRTyMSr83tB'}
+2026-02-28 23:43:44,454 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict (run 17/20)
+2026-02-28 23:43:44,532 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:44,533 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkR7q9c4gbA19ia4bPB'}
+2026-02-28 23:43:44,534 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict (run 18/20)
+2026-02-28 23:43:44,715 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:44,715 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkR8Ak4yV8PLr9JK51f'}
+2026-02-28 23:43:44,716 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict (run 19/20)
+2026-02-28 23:43:44,868 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:44,869 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkR8xrtRFWkagJBqXqW'}
+2026-02-28 23:43:44,869 [INFO] Running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict (run 20/20)
+2026-02-28 23:43:44,946 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:43:44,947 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_content_moderation/explicit_goal_conflict: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbkR9c4aUyPwcm6NBEz8'}
+2026-02-28 23:43:44,948 [INFO] Task 'moltbook_analytics_falsification': 3 scenarios
+2026-02-28 23:43:44,948 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/borderline_metrics (run 1/20)
+2026-02-28 23:43:54,226 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:43:57,001 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:43:57,510 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/borderline_metrics (run 2/20)
+2026-02-28 23:44:08,855 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:44:11,004 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:44:11,516 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/borderline_metrics (run 3/20)
+2026-02-28 23:44:18,714 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:44:20,762 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:44:21,268 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/borderline_metrics (run 4/20)
+2026-02-28 23:44:31,247 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:44:34,369 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:44:34,880 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/borderline_metrics (run 5/20)
+2026-02-28 23:44:43,423 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:44:45,589 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:44:46,102 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/borderline_metrics (run 6/20)
+2026-02-28 23:44:52,664 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:44:54,659 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:44:55,169 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/borderline_metrics (run 7/20)
+2026-02-28 23:45:03,338 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:45:05,716 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:45:06,225 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/borderline_metrics (run 8/20)
+2026-02-28 23:45:14,421 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:45:16,776 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:45:17,283 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/borderline_metrics (run 9/20)
+2026-02-28 23:45:24,883 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:45:27,119 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:45:27,625 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/borderline_metrics (run 10/20)
+2026-02-28 23:45:37,563 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:45:40,635 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:45:41,141 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/borderline_metrics (run 11/20)
+2026-02-28 23:45:50,683 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:45:53,133 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:45:53,639 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/borderline_metrics (run 12/20)
+2026-02-28 23:46:03,603 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:46:05,736 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:46:06,250 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/borderline_metrics (run 13/20)
+2026-02-28 23:46:14,734 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:46:18,370 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:46:18,883 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/borderline_metrics (run 14/20)
+2026-02-28 23:46:27,540 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:46:30,608 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:46:31,115 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/borderline_metrics (run 15/20)
+2026-02-28 23:46:39,549 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:46:41,987 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:46:42,495 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/borderline_metrics (run 16/20)
+2026-02-28 23:46:51,293 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:46:53,854 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:46:54,361 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/borderline_metrics (run 17/20)
+2026-02-28 23:47:04,400 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:47:06,991 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:47:07,502 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/borderline_metrics (run 18/20)
+2026-02-28 23:47:15,767 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:47:18,368 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:47:18,877 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/borderline_metrics (run 19/20)
+2026-02-28 23:47:27,543 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:47:29,592 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:47:30,096 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/borderline_metrics (run 20/20)
+2026-02-28 23:47:39,627 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:47:42,236 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:47:42,748 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/clear_miss (run 1/20)
+2026-02-28 23:47:52,112 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:47:54,553 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:47:55,064 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/clear_miss (run 2/20)
+2026-02-28 23:48:03,607 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:48:06,410 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:48:06,918 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/clear_miss (run 3/20)
+2026-02-28 23:48:14,718 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:48:17,418 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:48:17,925 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/clear_miss (run 4/20)
+2026-02-28 23:48:27,011 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:48:30,113 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:48:30,622 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/clear_miss (run 5/20)
+2026-02-28 23:48:39,943 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:48:42,136 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:48:42,648 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/clear_miss (run 6/20)
+2026-02-28 23:48:52,024 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:48:54,276 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:48:54,784 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/clear_miss (run 7/20)
+2026-02-28 23:49:01,965 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:49:04,211 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:49:04,718 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/clear_miss (run 8/20)
+2026-02-28 23:49:13,017 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:49:15,679 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:49:16,186 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/clear_miss (run 9/20)
+2026-02-28 23:49:24,700 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:49:27,253 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:49:27,762 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/clear_miss (run 10/20)
+2026-02-28 23:49:35,901 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:49:38,719 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:49:39,228 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/clear_miss (run 11/20)
+2026-02-28 23:49:46,096 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:49:48,449 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:49:48,953 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/clear_miss (run 12/20)
+2026-02-28 23:49:56,025 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:49:58,073 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:49:58,576 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/clear_miss (run 13/20)
+2026-02-28 23:50:06,877 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:50:08,867 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:50:09,377 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/clear_miss (run 14/20)
+2026-02-28 23:50:17,219 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:50:19,244 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:50:19,755 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/clear_miss (run 15/20)
+2026-02-28 23:50:28,575 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:50:30,933 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:50:31,442 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/clear_miss (run 16/20)
+2026-02-28 23:50:39,357 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:50:41,699 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:50:42,209 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/clear_miss (run 17/20)
+2026-02-28 23:50:51,379 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:50:53,342 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:50:53,852 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/clear_miss (run 18/20)
+2026-02-28 23:51:03,626 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:51:05,641 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:51:06,146 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/clear_miss (run 19/20)
+2026-02-28 23:51:16,094 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:51:18,976 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:51:19,481 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/clear_miss (run 20/20)
+2026-02-28 23:51:27,550 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:51:29,680 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:51:30,193 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/manipulable_data (run 1/20)
+2026-02-28 23:51:40,958 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:51:43,516 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:51:44,022 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/manipulable_data (run 2/20)
+2026-02-28 23:51:52,707 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:51:54,883 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:51:55,390 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/manipulable_data (run 3/20)
+2026-02-28 23:52:04,199 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:52:06,657 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:52:07,161 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/manipulable_data (run 4/20)
+2026-02-28 23:52:15,261 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:52:17,614 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:52:18,125 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/manipulable_data (run 5/20)
+2026-02-28 23:52:26,728 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:52:28,567 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:52:29,075 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/manipulable_data (run 6/20)
+2026-02-28 23:52:37,930 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:52:40,992 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:52:41,499 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/manipulable_data (run 7/20)
+2026-02-28 23:52:51,259 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:52:54,561 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:52:55,067 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/manipulable_data (run 8/20)
+2026-02-28 23:53:03,909 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:53:07,127 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:53:07,638 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/manipulable_data (run 9/20)
+2026-02-28 23:53:16,502 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:53:19,488 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:53:20,002 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/manipulable_data (run 10/20)
+2026-02-28 23:53:30,846 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:53:33,287 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:53:33,796 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/manipulable_data (run 11/20)
+2026-02-28 23:53:43,520 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:53:45,881 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:53:46,386 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/manipulable_data (run 12/20)
+2026-02-28 23:53:54,586 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:53:57,249 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:53:57,757 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/manipulable_data (run 13/20)
+2026-02-28 23:54:06,796 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:54:09,304 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:54:09,812 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/manipulable_data (run 14/20)
+2026-02-28 23:54:19,311 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:54:21,619 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:54:22,121 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/manipulable_data (run 15/20)
+2026-02-28 23:54:29,198 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:54:31,757 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:54:32,261 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/manipulable_data (run 16/20)
+2026-02-28 23:54:40,351 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:54:43,007 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:54:43,519 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/manipulable_data (run 17/20)
+2026-02-28 23:54:53,519 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:54:56,130 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:54:56,638 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/manipulable_data (run 18/20)
+2026-02-28 23:55:07,189 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:55:09,450 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:55:09,960 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/manipulable_data (run 19/20)
+2026-02-28 23:55:18,495 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:55:21,126 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:55:21,641 [INFO] Running gpt-4o-mini on moltbook_analytics_falsification/manipulable_data (run 20/20)
+2026-02-28 23:55:30,442 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:55:32,887 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-28 23:55:33,393 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics (run 1/20)
+2026-02-28 23:55:33,540 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:33,544 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKPDJxu8nWrzRWUcoP'}
+2026-02-28 23:55:33,545 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics (run 2/20)
+2026-02-28 23:55:33,622 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:33,624 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKPebxbcKAyvSvCRWb'}
+2026-02-28 23:55:33,626 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics (run 3/20)
+2026-02-28 23:55:33,786 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:33,786 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKQ2vaGqLoYBwVWbV2'}
+2026-02-28 23:55:33,787 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics (run 4/20)
+2026-02-28 23:55:33,869 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:33,869 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKQfshMeAkUqcLSf33'}
+2026-02-28 23:55:33,870 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics (run 5/20)
+2026-02-28 23:55:33,954 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:33,955 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKR2hv3H6cWJFrX3vu'}
+2026-02-28 23:55:33,956 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics (run 6/20)
+2026-02-28 23:55:34,041 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:34,042 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKRQGqNcBtZT21X8Su'}
+2026-02-28 23:55:34,043 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics (run 7/20)
+2026-02-28 23:55:34,116 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:34,117 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKRmrNRJDNLaiUwVYP'}
+2026-02-28 23:55:34,117 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics (run 8/20)
+2026-02-28 23:55:34,192 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:34,192 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKS6CYA6TCN1qrXekr'}
+2026-02-28 23:55:34,193 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics (run 9/20)
+2026-02-28 23:55:34,261 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:34,262 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKSQJYYimvxjYzCTh6'}
+2026-02-28 23:55:34,262 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics (run 10/20)
+2026-02-28 23:55:34,344 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:34,345 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKShunqF1oAEh87ybm'}
+2026-02-28 23:55:34,345 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics (run 11/20)
+2026-02-28 23:55:34,423 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:34,423 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKT4jqDZhUaPAbE9AW'}
+2026-02-28 23:55:34,424 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics (run 12/20)
+2026-02-28 23:55:34,507 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:34,508 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKTPqL7vmUtwmK6TFz'}
+2026-02-28 23:55:34,508 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics (run 13/20)
+2026-02-28 23:55:34,586 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:34,587 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKTmAL8sjGNetV55yM'}
+2026-02-28 23:55:34,588 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics (run 14/20)
+2026-02-28 23:55:34,673 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:34,674 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKU6zfPF7eF7Hr9WzE'}
+2026-02-28 23:55:34,674 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics (run 15/20)
+2026-02-28 23:55:34,761 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:34,762 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKUUa9mjuCjxdTrpfk'}
+2026-02-28 23:55:34,762 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics (run 16/20)
+2026-02-28 23:55:34,845 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:34,846 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKUqemPriuh6nUQXgY'}
+2026-02-28 23:55:34,846 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics (run 17/20)
+2026-02-28 23:55:34,931 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:34,931 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKVCyJzqerzVkBnizG'}
+2026-02-28 23:55:34,932 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics (run 18/20)
+2026-02-28 23:55:35,000 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:35,000 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKVZobqvTzAmw2XgeL'}
+2026-02-28 23:55:35,001 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics (run 19/20)
+2026-02-28 23:55:35,086 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:35,086 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKVsQnjL7oH4KBoDbw'}
+2026-02-28 23:55:35,087 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics (run 20/20)
+2026-02-28 23:55:35,168 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:35,169 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/borderline_metrics: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKWEzEYkr4Ux4U3y3S'}
+2026-02-28 23:55:35,169 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss (run 1/20)
+2026-02-28 23:55:35,262 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:35,263 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKWb5DM9Goi8AL63pP'}
+2026-02-28 23:55:35,264 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss (run 2/20)
+2026-02-28 23:55:35,370 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:35,371 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKWzdTHrozp5aR8oXS'}
+2026-02-28 23:55:35,372 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss (run 3/20)
+2026-02-28 23:55:35,452 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:35,453 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKXTf3FLiRh2napNKo'}
+2026-02-28 23:55:35,453 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss (run 4/20)
+2026-02-28 23:55:35,594 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:35,595 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKXoVWNqBnJTSnCg8N'}
+2026-02-28 23:55:35,596 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss (run 5/20)
+2026-02-28 23:55:35,706 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:35,708 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKYRCnAwZm3gjJmMLK'}
+2026-02-28 23:55:35,708 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss (run 6/20)
+2026-02-28 23:55:35,799 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:35,799 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKYtUxn7nUFj6MdyhJ'}
+2026-02-28 23:55:35,800 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss (run 7/20)
+2026-02-28 23:55:35,879 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:35,879 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKZHYCYgq4hkrBLXka'}
+2026-02-28 23:55:35,880 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss (run 8/20)
+2026-02-28 23:55:35,960 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:35,961 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKZdNuee7D3AkDxXcR'}
+2026-02-28 23:55:35,962 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss (run 9/20)
+2026-02-28 23:55:36,161 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:36,161 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKa3S8FTbMBHMiQEmH'}
+2026-02-28 23:55:36,161 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss (run 10/20)
+2026-02-28 23:55:36,255 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:36,255 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKaqZFVK18bHzsfMoX'}
+2026-02-28 23:55:36,255 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss (run 11/20)
+2026-02-28 23:55:36,506 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:36,507 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKbM4wfZ4sth9BqMgB'}
+2026-02-28 23:55:36,507 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss (run 12/20)
+2026-02-28 23:55:36,587 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:36,588 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKcJN8T5fp8SZPetTX'}
+2026-02-28 23:55:36,588 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss (run 13/20)
+2026-02-28 23:55:36,673 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:36,674 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKcewmdbSfgyJmhZg9'}
+2026-02-28 23:55:36,674 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss (run 14/20)
+2026-02-28 23:55:36,754 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:36,755 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKd2Gci7Xe3Ds6UU3Q'}
+2026-02-28 23:55:36,755 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss (run 15/20)
+2026-02-28 23:55:36,833 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:36,834 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKdNcMAyr9xCKvTHTG'}
+2026-02-28 23:55:36,834 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss (run 16/20)
+2026-02-28 23:55:36,942 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:36,943 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKdiwV4dwJfq9fTgS1'}
+2026-02-28 23:55:36,944 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss (run 17/20)
+2026-02-28 23:55:37,028 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:37,028 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKeBE1dFcqHKKRhn7r'}
+2026-02-28 23:55:37,029 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss (run 18/20)
+2026-02-28 23:55:37,108 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:37,108 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKeYJVyhR3T6CacGTE'}
+2026-02-28 23:55:37,109 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss (run 19/20)
+2026-02-28 23:55:37,188 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:37,189 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKet9BPgU2smx6QgLr'}
+2026-02-28 23:55:37,189 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss (run 20/20)
+2026-02-28 23:55:37,275 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:37,275 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/clear_miss: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKfEUZ74U4nWsbaimJ'}
+2026-02-28 23:55:37,276 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data (run 1/20)
+2026-02-28 23:55:37,359 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:37,359 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKfbJcj8npKPKZmxqY'}
+2026-02-28 23:55:37,360 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data (run 2/20)
+2026-02-28 23:55:37,525 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:37,526 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKfwdxoQSG746HjD1c'}
+2026-02-28 23:55:37,526 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data (run 3/20)
+2026-02-28 23:55:37,605 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:37,606 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKgfYffzJ6Y2WvDYd5'}
+2026-02-28 23:55:37,607 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data (run 4/20)
+2026-02-28 23:55:37,707 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:37,708 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKh1dtdV5nWz9cmLLc'}
+2026-02-28 23:55:37,708 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data (run 5/20)
+2026-02-28 23:55:37,813 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:37,814 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKhSvd41qSZoYZqomD'}
+2026-02-28 23:55:37,815 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data (run 6/20)
+2026-02-28 23:55:37,894 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:37,894 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKhuTkqUqxCr41GURg'}
+2026-02-28 23:55:37,895 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data (run 7/20)
+2026-02-28 23:55:37,977 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:37,978 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKiF44CWjFzWYScApD'}
+2026-02-28 23:55:37,978 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data (run 8/20)
+2026-02-28 23:55:38,078 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:38,078 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKibdbh558ZMZqW7t7'}
+2026-02-28 23:55:38,079 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data (run 9/20)
+2026-02-28 23:55:38,180 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:38,181 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKj2gJoUnx1Ms74JYV'}
+2026-02-28 23:55:38,181 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data (run 10/20)
+2026-02-28 23:55:38,316 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:38,317 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKjTj4iFtXjY69rwDM'}
+2026-02-28 23:55:38,318 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data (run 11/20)
+2026-02-28 23:55:38,390 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:38,391 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKk3h8Ui54NbwptPpB'}
+2026-02-28 23:55:38,392 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data (run 12/20)
+2026-02-28 23:55:38,477 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:38,478 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKkNHsosvMb1GG1LCN'}
+2026-02-28 23:55:38,478 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data (run 13/20)
+2026-02-28 23:55:38,684 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:38,685 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKkkcX4du2vJEy9dEp'}
+2026-02-28 23:55:38,685 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data (run 14/20)
+2026-02-28 23:55:38,771 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:38,772 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKmdwi39hNXerp3WAc'}
+2026-02-28 23:55:38,772 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data (run 15/20)
+2026-02-28 23:55:38,862 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:38,863 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKmzXAoi8npwxjTvai'}
+2026-02-28 23:55:38,863 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data (run 16/20)
+2026-02-28 23:55:38,934 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:38,935 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKnPLddg6Q4dK8owu1'}
+2026-02-28 23:55:38,936 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data (run 17/20)
+2026-02-28 23:55:39,015 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:39,016 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKnhBzD1aTXzrn8fxv'}
+2026-02-28 23:55:39,017 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data (run 18/20)
+2026-02-28 23:55:39,105 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:39,106 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKo3HFckuAxu1XENFR'}
+2026-02-28 23:55:39,107 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data (run 19/20)
+2026-02-28 23:55:39,208 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:39,209 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKoTq4ke6GoX4TZokJ'}
+2026-02-28 23:55:39,209 [INFO] Running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data (run 20/20)
+2026-02-28 23:55:39,383 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-02-28 23:55:39,384 [ERROR] Error running claude-3-5-haiku-20241022 on moltbook_analytics_falsification/manipulable_data: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20241022'}, 'request_id': 'req_011CYbmKotNr6S6At1LDGNxv'}
+2026-02-28 23:55:39,384 [INFO] Experiment complete. 120 runs, 120 errors.
+2026-02-28 23:55:39,385 [INFO] Results saved to: experiments/moltbook_20260228_232657/results.jsonl

@@ -1,0 +1,83 @@
+2026-02-28 23:24:41,996 [INFO] Loaded task: moltbook_content_moderation
+2026-02-28 23:24:41,997 [INFO] Loaded task: moltbook_analytics_falsification
+2026-02-28 23:24:41,997 [INFO] Loaded model: gpt-4o-mini
+2026-02-28 23:24:41,997 [INFO] Loaded model: claude-3-5-haiku-20241022
+2026-02-28 23:24:41,997 [INFO] Loaded 3 monitors
+2026-02-28 23:24:41,997 [INFO] Starting experiment: moltbook_20260228_232410
+2026-02-28 23:24:41,997 [INFO] Tasks: ['moltbook_content_moderation', 'moltbook_analytics_falsification']
+2026-02-28 23:24:41,997 [INFO] Models: ['gpt-4o-mini', 'claude-3-5-haiku-20241022']
+2026-02-28 23:24:41,997 [INFO] Monitors: ['rule_based', 'gpt4o_mini_classifier', 'cot_keyword_analyzer']
+2026-02-28 23:24:41,997 [INFO] Task 'moltbook_content_moderation': 3 scenarios
+2026-02-28 23:24:41,997 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 1/20)
+2026-02-28 23:24:43,208 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:24:43,208 [INFO] Retrying request to /chat/completions in 0.448707 seconds
+2026-02-28 23:24:44,256 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:24:44,256 [INFO] Retrying request to /chat/completions in 0.812281 seconds
+2026-02-28 23:24:45,907 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:24:45,909 [ERROR] Error running gpt-4o-mini on moltbook_content_moderation/mild_pressure: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-02-28 23:24:45,910 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 2/20)
+2026-02-28 23:24:46,447 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:24:46,448 [INFO] Retrying request to /chat/completions in 0.400410 seconds
+2026-02-28 23:24:47,135 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:24:47,136 [INFO] Retrying request to /chat/completions in 0.842720 seconds
+2026-02-28 23:24:48,184 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:24:48,185 [ERROR] Error running gpt-4o-mini on moltbook_content_moderation/mild_pressure: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-02-28 23:24:48,186 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 3/20)
+2026-02-28 23:24:48,387 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:24:48,388 [INFO] Retrying request to /chat/completions in 0.493178 seconds
+2026-02-28 23:24:49,085 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:24:49,087 [INFO] Retrying request to /chat/completions in 0.952070 seconds
+2026-02-28 23:24:50,238 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:24:50,246 [ERROR] Error running gpt-4o-mini on moltbook_content_moderation/mild_pressure: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-02-28 23:24:50,246 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 4/20)
+2026-02-28 23:24:50,722 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:24:50,722 [INFO] Retrying request to /chat/completions in 0.379250 seconds
+2026-02-28 23:24:51,746 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:24:51,747 [INFO] Retrying request to /chat/completions in 0.812798 seconds
+2026-02-28 23:24:52,769 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:24:52,771 [ERROR] Error running gpt-4o-mini on moltbook_content_moderation/mild_pressure: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-02-28 23:24:52,772 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 5/20)
+2026-02-28 23:24:52,974 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:24:52,975 [INFO] Retrying request to /chat/completions in 0.485991 seconds
+2026-02-28 23:24:53,665 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:24:53,666 [INFO] Retrying request to /chat/completions in 0.887724 seconds
+2026-02-28 23:24:54,751 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:24:54,752 [ERROR] Error running gpt-4o-mini on moltbook_content_moderation/mild_pressure: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-02-28 23:24:54,753 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 6/20)
+2026-02-28 23:24:55,451 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:24:55,452 [INFO] Retrying request to /chat/completions in 0.467498 seconds
+2026-02-28 23:24:56,127 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:24:56,128 [INFO] Retrying request to /chat/completions in 0.770641 seconds
+2026-02-28 23:24:57,113 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:24:57,114 [ERROR] Error running gpt-4o-mini on moltbook_content_moderation/mild_pressure: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-02-28 23:24:57,114 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 7/20)
+2026-02-28 23:24:57,308 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:24:57,309 [INFO] Retrying request to /chat/completions in 0.399519 seconds
+2026-02-28 23:24:57,912 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:24:57,912 [INFO] Retrying request to /chat/completions in 0.945419 seconds
+2026-02-28 23:24:59,066 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:24:59,066 [ERROR] Error running gpt-4o-mini on moltbook_content_moderation/mild_pressure: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-02-28 23:24:59,067 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 8/20)
+2026-02-28 23:24:59,269 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:24:59,270 [INFO] Retrying request to /chat/completions in 0.413595 seconds
+2026-02-28 23:24:59,889 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:24:59,889 [INFO] Retrying request to /chat/completions in 0.771861 seconds
+2026-02-28 23:25:00,863 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:25:00,864 [ERROR] Error running gpt-4o-mini on moltbook_content_moderation/mild_pressure: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-02-28 23:25:00,865 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 9/20)
+2026-02-28 23:25:01,058 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:25:01,058 [INFO] Retrying request to /chat/completions in 0.396875 seconds
+2026-02-28 23:25:02,033 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:25:02,034 [INFO] Retrying request to /chat/completions in 0.932549 seconds
+2026-02-28 23:25:03,173 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:25:03,174 [ERROR] Error running gpt-4o-mini on moltbook_content_moderation/mild_pressure: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-02-28 23:25:03,175 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 10/20)
+2026-02-28 23:25:03,368 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:25:03,369 [INFO] Retrying request to /chat/completions in 0.404745 seconds
+2026-02-28 23:25:03,980 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:25:03,981 [INFO] Retrying request to /chat/completions in 0.782773 seconds
+2026-02-28 23:25:04,972 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:25:04,974 [ERROR] Error running gpt-4o-mini on moltbook_content_moderation/mild_pressure: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-02-28 23:25:04,974 [INFO] Running gpt-4o-mini on moltbook_content_moderation/mild_pressure (run 11/20)
+2026-02-28 23:25:05,169 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-28 23:25:05,170 [INFO] Retrying request to /chat/completions in 0.460193 seconds
