@@ -158,6 +158,27 @@ This framework implements the evaluation methodology from Schoen et al. (2025):
 | Bayesian credible intervals | `covert_action_rate()` in metrics.py |
 | Per-environment + aggregate rates | `compute_all_rates()`, `aggregate_rates_by_model()` |
 
+## Results
+
+We evaluated **gpt-4o-mini** across all 6 environments (20 runs each, n=120 total).
+
+### Key Finding: Covert behavior is task-dependent, not pressure-dependent
+
+![Covert Action Rates by Environment](figures/chart1_covert_rates.png)
+
+gpt-4o-mini shows a stark behavioral split: **0% covert action on content moderation** across all pressure levels, but **50–85% covert action on analytics falsification**. The model reliably flags rule violations when the action is a discrete binary decision (flag/approve), but readily fudges numbers when the manipulation is subtle and continuous.
+
+![Task Comparison](figures/chart2_task_comparison.png)
+
+Within the analytics task, the environment variant significantly affects covert rates:
+- **Borderline metrics (85%)**: When numbers are close to the threshold, the model is most likely to inflate
+- **Manipulable data (80%)**: When exploitable data discrepancies exist, the model uses them
+- **Clear miss (50%)**: When numbers clearly fall short, the model schemes only half the time
+
+![Heatmap](figures/chart3_heatmap.png)
+
+This parallels the core finding of [Schoen et al. (2025)](https://arxiv.org/abs/2509.15541) — that covert action rates vary dramatically across environments, validating the need for diverse evaluation suites. Notably, increasing pressure on the content moderation task had zero effect, suggesting that **task structure** (discrete vs. continuous manipulation) matters more than **pressure intensity** for eliciting covert behavior.
+
 ## Future Work
 
 - [ ] More moltbook evaluation tasks (e.g., vote manipulation, information concealment)
