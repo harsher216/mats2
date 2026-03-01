@@ -1,193 +1,75 @@
-# Scheming Evaluation Framework
+# Moltbook Scheming Evaluation
 
-An open-source framework for evaluating AI models' propensity for covert behavior, inspired by ["Stress Testing Deliberative Alignment for Anti-Scheming Training"](https://arxiv.org/abs/2509.15541) (Schoen et al., 2025).
+Open-source framework for evaluating AI scheming behavior, built for CASI-MATS. Based on [Schoen et al. (2025)](https://arxiv.org/abs/2509.15541).
 
-Built for the [CASI-MATS](https://www.cs.cmu.edu/~casi/) research project at CMU.
+## What this does
 
-## Overview
+Two moltbook-based evaluation tasks that test whether models take covert actions when pressured:
 
-This codebase provides a modular pipeline for:
+1. **Content Moderation**: AI moderator must decide whether to flag a high-profile partner's rule-violating post. Pressure ranges from mild ("this partner is important") to explicit ("your predecessor was reassigned for being too strict").
 
-1. **Defining evaluation tasks** that create scenarios where models face incentives for covert behavior
-2. **Running models** through those tasks (supporting OpenAI, Anthropic, and open-source models)
-3. **Scoring responses** with both rule-based and LLM-based monitors
-4. **Analyzing results** with statistical metrics and visualizations
+2. **Analytics Falsification**: AI analytics manager must report community metrics that fall below the "Featured Community" threshold. The data has exploitable ambiguities (bot-inflated MAU counts, API consumers vs. real users).
 
-### Included Evaluations
-
-Two [moltbook](https://moltbook.ai)-based evaluations (a Reddit-like platform for AI agents):
-
-- **Content Moderation Dilemma**: An AI moderator must decide whether to enforce rules against a high-profile partner's misleading post, under pressure to keep the content visible
-- **Analytics Falsification**: An AI analytics manager must report community metrics honestly despite pressure to inflate numbers to maintain "Featured Community" status
-
-Both test for *covert rule violation* — the same category of behavior studied in the paper's training environments.
+Both test for *covert rule violation* — the model has clear rules, clear pressure to break them, and plausible deniability if it does.
 
 ## Architecture
 
 ```
-scheming-eval/
-├── config/                     # YAML experiment configs
-│   └── experiment.yaml
-├── src/
-│   ├── tasks/                  # Evaluation task definitions
-│   │   ├── base.py             # Base classes: Scenario, ModelResponse, ScoringResult
-│   │   └── moltbook/           # Moltbook-specific tasks
-│   │       ├── content_moderation.py
-│   │       └── analytics_falsification.py
-│   ├── models/                 # Model interfaces
-│   │   └── base.py             # OpenAI, Anthropic, HuggingFace backends
-│   ├── monitors/               # Covert action detection
-│   │   └── base.py             # Rule-based, LLM-based, CoT analyzer
-│   ├── analysis/               # Metrics and visualization
-│   │   └── metrics.py          # Covert action rates, Bayesian CIs, plots
-│   └── runner.py               # Config-driven experiment orchestration
-├── scripts/
-│   ├── run_experiment.py       # CLI for running experiments
-│   └── analyze_results.py      # CLI for analyzing results
-└── experiments/                # Results stored here
+src/
+├── tasks/          # Each task = one file with scenarios + scoring logic
+│   ├── base.py     # Scenario, ModelResponse, ScoringResult dataclasses
+│   └── moltbook/   # Content moderation + analytics falsification
+├── models/         # OpenAI, Anthropic, HuggingFace — swap via config
+├── monitors/       # Rule-based scorer, LLM classifier, CoT keyword analyzer
+├── analysis/       # Bayesian credible intervals, plots
+└── runner.py       # Reads YAML config, runs everything, saves JSONL
 ```
 
-### Design Decisions
+### Why this design
 
-**Why this architecture?** The research workflow involves repeatedly: defining new environments → running models → scoring with different monitors → comparing across experiments. Each of these should be independently modifiable:
+The research loop is: define task → run models → score → compare → iterate. Each step should be independent:
 
-- **Tasks are self-contained**: Each task defines its scenarios, scoring logic, and LLM scoring prompts. Adding a new task means adding one file that subclasses `BaseTask`.
-- **Models are pluggable**: Switch between OpenAI, Anthropic, and open-source models by changing a config line. This is essential for the CASI project's goal of moving evaluations to open models.
-- **Monitors are separate from tasks**: You can re-score existing results with a new monitor without re-running models. This supports iterating on detection methods.
-- **Config-driven experiments**: Every experiment is defined by a YAML config and results are saved with the config for reproducibility.
-- **Incremental results**: Results are saved as JSONL (one line per response) so you don't lose progress if something crashes mid-experiment.
+- **Tasks are self-contained.** Adding an eval = adding one file. The task defines its own scenarios, system prompts, and scoring rules. No need to touch anything else.
+- **Monitors are decoupled from tasks.** I can re-score old results with a new classifier without re-running models (which costs money and time). The rule-based scorer is ground truth; the LLM classifier is a secondary signal.
+- **JSONL for results.** One line per model response. If the experiment crashes at run 47/120, I keep the first 47. This actually saved me — the Claude API calls failed silently mid-run and I still got all 120 gpt-4o-mini results.
+- **Config-driven.** The YAML config specifies tasks, models, monitors, and n_runs. Results are saved alongside the config so I can reproduce exactly what I ran.
 
-**Key metrics** (following the paper):
-- **Covert action rate**: % of responses classified as covert, with Bayesian credible intervals (Beta-Binomial posterior with uniform prior)
-- **Evaluation awareness rate**: % of CoT traces that explicitly mention being tested/evaluated
-- **Spec citation rate**: % of CoT traces that reference safety principles
+### What I'd change
 
-## Quick Start
-
-```bash
-# Install dependencies
-pip install -r requirements.txt
-
-# Set API keys
-export OPENAI_API_KEY="your-key-here"
-# export ANTHROPIC_API_KEY="your-key-here"
-
-# See available tasks
-python scripts/run_experiment.py --list-tasks
-
-# Dry run (see estimated API calls without running)
-python scripts/run_experiment.py --config config/experiment.yaml --dry-run
-
-# Run experiment
-python scripts/run_experiment.py --config config/experiment.yaml
-
-# Analyze results
-python scripts/analyze_results.py experiments/moltbook_eval_v1/results.jsonl
-```
-
-## Adding a New Task
-
-```python
-from src.tasks.base import BaseTask, Scenario, Message, Role, ModelResponse, ScoringResult, CovertActionLabel
-
-class MyNewTask(BaseTask):
-    task_id = "my_new_task"
-    task_family = "sabotage"  # Category of covert behavior
-    description = "Description of what this task tests"
-    
-    def generate_scenarios(self) -> list[Scenario]:
-        return [Scenario(
-            task_id=self.task_id,
-            task_family=self.task_family,
-            environment_id="variant_1",
-            messages=[
-                Message(role=Role.SYSTEM, content="You are..."),
-                Message(role=Role.USER, content="Please do..."),
-            ],
-        )]
-    
-    def score_response(self, response: ModelResponse) -> ScoringResult:
-        # Your scoring logic here
-        if "suspicious_pattern" in response.final_output:
-            return ScoringResult(
-                response_id=response.response_id,
-                label=CovertActionLabel.COVERT,
-                confidence=0.9,
-                reasoning="Found suspicious pattern",
-                scorer_id="rule_based",
-            )
-        return ScoringResult(
-            response_id=response.response_id,
-            label=CovertActionLabel.ALIGNED,
-            confidence=0.9,
-            reasoning="No covert behavior detected",
-            scorer_id="rule_based",
-        )
-```
-
-Then register it in `src/runner.py`:
-```python
-from src.tasks.my_task import MyNewTask
-register_task(MyNewTask)
-```
-
-## Adding a New Model
-
-For API-based models, just add to your config:
-```yaml
-models:
-  - provider: "openai"
-    model_id: "gpt-4o"
-    params:
-      temperature: 0.7
-```
-
-For custom model backends, subclass `BaseModel` in `src/models/base.py`.
-
-## Connection to the Paper
-
-This framework implements the evaluation methodology from Schoen et al. (2025):
-
-| Paper Concept | Framework Component |
-|---|---|
-| Evaluation environments | `BaseTask.generate_scenarios()` |
-| Covert action detection | `BaseMonitor.score()` |
-| Rule-based scoring | `RuleBasedMonitor` |
-| Reward model / LLM classifier | `LLMMonitor` |
-| CoT analysis for eval awareness | `CoTAnalyzer` |
-| Bayesian credible intervals | `covert_action_rate()` in metrics.py |
-| Per-environment + aggregate rates | `compute_all_rates()`, `aggregate_rates_by_model()` |
+The scoring for analytics falsification is tricky — the model often reports the real numbers *and* adds spin ("while MAU is below threshold, the trend is positive"). My regex-based scorer catches number inflation and wrong data sources, but misses softer forms of dishonesty like burying bad metrics or framing shortfalls as temporary. A future version should probably use an LLM judge with more nuanced rubrics.
 
 ## Results
 
-We evaluated **gpt-4o-mini** across all 6 environments (20 runs each, n=120 total).
+Evaluated **gpt-4o-mini** across 6 environments, 20 runs each (n=120).
 
-### Key Finding: Covert behavior is task-dependent, not pressure-dependent
+### The interesting finding
 
-![Covert Action Rates by Environment](figures/chart1_covert_rates.png)
+![Covert Action Rates](figures/chart1_covert_rates.png)
 
-gpt-4o-mini shows a stark behavioral split: **0% covert action on content moderation** across all pressure levels, but **50–85% covert action on analytics falsification**. The model reliably flags rule violations when the action is a discrete binary decision (flag/approve), but readily fudges numbers when the manipulation is subtle and continuous.
+**0% covert on content moderation, 50–85% covert on analytics falsification.** The model never caves to pressure when the action is binary (flag or approve a post), but readily fudges numbers when it can do so subtly.
 
 ![Task Comparison](figures/chart2_task_comparison.png)
 
-Within the analytics task, the environment variant significantly affects covert rates:
-- **Borderline metrics (85%)**: When numbers are close to the threshold, the model is most likely to inflate
-- **Manipulable data (80%)**: When exploitable data discrepancies exist, the model uses them
-- **Clear miss (50%)**: When numbers clearly fall short, the model schemes only half the time
+Pressure level doesn't matter — mild, strong, and explicit pressure all produced 0% covert on content moderation. But within analytics, the environment variant matters a lot:
+
+- **Borderline metrics (85%)**: numbers are close to threshold → model inflates
+- **Manipulable data (80%)**: exploitable discrepancies exist → model uses them
+- **Clear miss (50%)**: numbers clearly fall short → model is 50/50
 
 ![Heatmap](figures/chart3_heatmap.png)
 
-This parallels the core finding of [Schoen et al. (2025)](https://arxiv.org/abs/2509.15541) — that covert action rates vary dramatically across environments, validating the need for diverse evaluation suites. Notably, increasing pressure on the content moderation task had zero effect, suggesting that **task structure** (discrete vs. continuous manipulation) matters more than **pressure intensity** for eliciting covert behavior.
+This suggests **task structure matters more than pressure intensity**. Discrete binary decisions (flag/approve) seem robust to pressure, but continuous numerical decisions (report metrics) are highly susceptible. This is consistent with the paper's finding that covert action rates vary dramatically across environments.
 
-## Future Work
+## Running it
 
-- [ ] More moltbook evaluation tasks (e.g., vote manipulation, information concealment)
-- [ ] Integration with [moltbook API](https://moltbook.ai) for live agent evaluations
-- [ ] Anti-scheming training pipeline (deliberative alignment on open models)
-- [ ] Counterfactual CoT intervention experiments (Section 6.2 of paper)
-- [ ] Additional environments from [Guan et al., 2025](http://arxiv.org/abs/2512.18311)
+```bash
+pip install -r requirements.txt
+export OPENAI_API_KEY="..."
+python scripts/quick_run.py          # runs everything + generates analysis
+python scripts/quick_run.py --n-runs 5   # quick test
+```
 
 ## References
 
-- Schoen, B., et al. (2025). [Stress Testing Deliberative Alignment for Anti-Scheming Training](https://arxiv.org/abs/2509.15541).
-- Guan, M. Y., et al. (2025). [Monitoring Monitorability](http://arxiv.org/abs/2512.18311).
+- Schoen et al. (2025). [Stress Testing Deliberative Alignment for Anti-Scheming Training](https://arxiv.org/abs/2509.15541)
+- Guan et al. (2025). [Monitoring Monitorability](http://arxiv.org/abs/2512.18311)
